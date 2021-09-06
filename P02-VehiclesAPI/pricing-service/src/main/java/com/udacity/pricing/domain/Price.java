@@ -5,7 +5,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,11 +23,11 @@ public class Price {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name="vehicleid")
-    private Long vehicleId;
+    private Long id;
 
     private String currency;
     private BigDecimal price;
+    private Long vehicleId;
 
     public Price(String currency, BigDecimal price, Long vehicleId) {
         this.currency = currency;
