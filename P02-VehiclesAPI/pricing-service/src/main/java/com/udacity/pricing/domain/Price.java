@@ -1,5 +1,6 @@
 package com.udacity.pricing.domain;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -20,6 +21,7 @@ import java.math.BigDecimal;
 @Setter
 @ToString
 @RequiredArgsConstructor
+@AllArgsConstructor
 @Builder
 public class Price {
 
